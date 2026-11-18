@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis XV años | Kendra</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<input type="color" id="selectorLetras" value="#f4e8d5">
+
+<header class="portada" id="inicio">
+  <div class="contenido">
+    <p class="sobrelinea">CON LA BENDICIÓN DE DIOS Y DE MIS PADRES</p>
+    <p class="mis">Mis</p>
+    <h1>Kendra</h1>
+    <p class="quince">XV AÑOS</p>
+    <p class="ornamento">✦ ✧ ✦</p>
+    <p class="frase">Una noche para recordar, un sueño hecho realidad.</p>
+    <a class="boton dorado" href="#bienvenida">Acompáñame</a>
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="#inicio">Inicio</a>
+  <a href="#bienvenida">Invitación</a>
+  <a href="#detalles">Detalles</a>
+  <a href="#galeria">Galería</a>
+  <a href="#videos">Videos</a>
+</nav>
+
+<main>
+
+<section class="seccion" id="bienvenida">
+  <p class="etiqueta">MI DÍA ESPECIAL</p>
+  <h2>Quiero compartirlo contigo</h2>
+  <div class="linea"></div>
+  <p class="texto">
+    Hay momentos que se vuelven inolvidables cuando los compartimos
+    con las personas que queremos. Me hará muy feliz que formes
+    parte de esta celebración tan especial.
+  </p>
+  <p class="firma">Con cariño, Kendra</p>
+</section>
+
+<section class="seccion fondo" id="detalles">
+  <p class="etiqueta">RESERVA LA FECHA</p>
+  <h2>Detalles de la celebración</h2>
+
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <span>✧</span>
+      <h3>La fecha</h3>
+      <p>Por confirmar</p>
+    </article>
+
+    <article class="tarjeta">
+      <span>◷</span>
+      <h3>La hora</h3>
+      <p>Por confirmar</p>
+    </article>
+
+    <article class="tarjeta">
+      <span>⌖</span>
+      <h3>El lugar</h3>
+      <p>Por confirmar</p>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="galeria">
+  <p class="etiqueta">RECUERDOS</p>
+  <h2>Mi galería</h2>
+  <p class="texto">Agrega tus fotografías favoritas.</p>
+
+  <label class="boton contorno" for="selectorFotos">
+    ＋ Agregar fotografías
+  </label>
+
+  <input type="file" id="selectorFotos" accept="image/*" multiple hidden>
+
+  <div class="rejilla" id="contenedorFotos">
+    <p class="vacio">Tus fotografías aparecerán aquí.</p>
+  </div>
+</section>
+
+<section class="seccion fondo" id="videos">
+  <p class="etiqueta">MOMENTOS ESPECIALES</p>
+  <h2>Mis videos</h2>
+  <p class="texto">Agrega videos desde tu computadora.</p>
+
+  <label class="boton contorno" for="selectorVideos">
+    ＋ Agregar videos
+  </label>
+
+  <input type="file" id="selectorVideos" accept="video/*" multiple hidden>
+
+  <div class="rejilla" id="contenedorVideos"></div>
+</section>
+
+<section class="seccion">
+  <p class="etiqueta">GRACIAS POR SER PARTE</p>
+  <h2>¡Te espero!</h2>
+  <p class="texto">Tu presencia será el mejor regalo.</p>
+  <a class="boton dorado" href="#inicio">Volver al inicio</a>
+</section>
+
+</main>
+
+<footer>
+  <p>Con amor, Kendra · Mis XV años</p>
+  <small>Haz clic en cualquier texto para cambiar el color de todas las letras.</small>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

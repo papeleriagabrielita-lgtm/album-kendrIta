@@ -1,0 +1,272 @@
+
+
+
+
+/* =================================
+   DISEÑO ELEGANTE PARA LOS XV DE KENDRA
+================================= */
+
+:root {
+  --fondo: #17121b;
+  --fondo-claro: #211927;
+  --dorado: #d6b477;
+  --color-texto-global: #f4e8d5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--color-texto-global);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+body.color-global-activo,
+body.color-global-activo * {
+  color: var(--color-texto-global) !important;
+}
+
+#selectorLetras {
+  position: fixed;
+  left: -100px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.portada {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    radial-gradient(ellipse at center, #493047 0%, #211927 48%, #100d13 100%);
+}
+
+.contenido {
+  max-width: 800px;
+}
+
+.sobrelinea,
+.etiqueta {
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.mis {
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+
+.portada h1 {
+  font-size: clamp(65px, 13vw, 125px);
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.quince {
+  font-size: 24px;
+  letter-spacing: 12px;
+  margin: 10px 0;
+}
+
+.ornamento {
+  color: var(--dorado);
+  letter-spacing: 12px;
+  font-size: 25px;
+}
+
+.frase {
+  font-style: italic;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 15px;
+  background: rgba(23, 18, 27, 0.96);
+  border-top: 1px solid #594633;
+  border-bottom: 1px solid #594633;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.menu a:hover {
+  color: var(--dorado);
+}
+
+.seccion {
+  padding: 85px 22px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.fondo {
+  max-width: none;
+  background: var(--fondo-claro);
+}
+
+.etiqueta {
+  color: var(--dorado);
+}
+
+h2 {
+  font-size: clamp(30px, 5vw, 43px);
+  font-weight: normal;
+  margin: 10px 0 20px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.linea {
+  width: 75px;
+  height: 1px;
+  background: var(--dorado);
+  margin: 25px auto;
+}
+
+.texto {
+  max-width: 680px;
+  margin: 20px auto;
+  font-size: 17px;
+}
+
+.firma {
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  max-width: 850px;
+  margin: 35px auto 0;
+}
+
+.tarjeta {
+  padding: 30px 20px;
+  border: 1px solid #765d43;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tarjeta span {
+  font-size: 30px;
+  color: var(--dorado);
+}
+
+.tarjeta h3 {
+  font-size: 22px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.dorado {
+  background: var(--dorado);
+  color: #211927 !important;
+  border: 1px solid var(--dorado);
+}
+
+.dorado:hover {
+  background: transparent;
+  color: var(--dorado) !important;
+}
+
+.contorno {
+  border: 1px solid var(--dorado);
+  color: var(--color-texto-global);
+}
+
+.contorno:hover {
+  background: var(--dorado);
+  color: #211927 !important;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: 35px auto 0;
+}
+
+.rejilla img,
+.rejilla video {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border: 1px solid #765d43;
+  background: #100d13;
+}
+
+.vacio {
+  grid-column: 1 / -1;
+  opacity: 0.7;
+}
+
+footer {
+  padding: 35px 20px;
+  text-align: center;
+  background: #100d13;
+  border-top: 1px solid #594633;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .seccion {
+    padding: 60px 18px;
+  }
+}
